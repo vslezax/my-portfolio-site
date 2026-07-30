@@ -143,3 +143,40 @@
         --text-gap: 10px;
     }
 }
+
+@media (max-width: 640px){
+    :root{
+        /* 320px */
+        --title-text-size: 16px;
+        --title-text-min-height: 14px;
+        --description-text-size: 7px;
+        --description-text-min-height: 27px;
+    
+        --main-component-width: 100wh;
+        --main-component-height: 403px;
+        --elements-top-padding: 40px;
+        --frame-width: 305px;
+        --frame-height: 403px;
+        
+        --small-rectangle-width: 148px;
+        --small-rectangle-height: 112px;
+        --big-rectangle-width: 148px;
+        --big-rectangle-height: 112px;
+    
+        --small-rectangle-left-padding: 155px;
+        --big-rectangle-left-padding: 155px;
+        --rectangle-top-padding: 120px;
+        --rectangle-border-size: 6px;
+        --rectangles-frame-height: 232px;
+    
+        --rectangle-text-size: 6.78px;
+        --rectangle-text-left: 7.92px;
+        --rectangle-text-top: 78px;
+        --rectangle-text-two-lines-top: 86px;
+
+        --button-scale: 1;
+
+        --gap: 0px;
+        --text-gap: 10px;
+    }
+}

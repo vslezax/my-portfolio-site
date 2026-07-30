@@ -16,11 +16,20 @@
     box-sizing: border-box;
 
     font-size: var(--title-text-size);;
-    line-height: .84;
+    line-height: 1;
     font-family: var(--font-montserrat);
     font-weight: 600;
 
-    color: var(--black);
+    background: linear-gradient(
+        to bottom,
+        #7E7E7E 0%,
+        #000000 100%
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 .subtitle {
