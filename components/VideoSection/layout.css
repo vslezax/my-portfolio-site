@@ -5,7 +5,7 @@
     --description-text-size: 20px;
     --description-text-min-height: 40px;
 
-    --main-component-width: 100wh;
+    --main-component-width: 100%;
     --main-component-height: 1280px;
     --elements-top-padding: 101px;
     --frame-width: 1154px;
@@ -41,7 +41,7 @@
         --description-text-size: 20px;
         --description-text-min-height: 69px;
     
-        --main-component-width: 100wh;
+        --main-component-width: 100%;
         --main-component-height: 1051px;
         --elements-top-padding: 79px;
         --frame-width: 917px;
@@ -78,7 +78,7 @@
         --description-text-size: 18px;
         --description-text-min-height: 63px;
     
-        --main-component-width: 100wh;
+        --main-component-width: 100%;
         --main-component-height: 8791px;
         --elements-top-padding: 83px;
         --frame-width: 714px;
@@ -115,7 +115,7 @@
         --description-text-size: 13.57px;
         --description-text-min-height: 57px;
     
-        --main-component-width: 100wh;
+        --main-component-width: 100%;
         --main-component-height: 807px;
         --elements-top-padding: 70px;
         --frame-width: 610px;
@@ -152,7 +152,7 @@
         --description-text-size: calc(7px * 100vw / 320px);
         --description-text-min-height: calc(27px * 100vw / 320px);
     
-        --main-component-width: 100wh;
+        --main-component-width: 100%;
         --main-component-height: calc(403px * 100vw / 320px);
         --elements-top-padding: calc(40px * 100vw / 320px);
         --frame-width: calc(305px * 100vw / 320px);
