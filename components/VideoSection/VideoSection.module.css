@@ -1,5 +1,5 @@
 .container {
-    width: var(--frame-width);
+    width: 100%;
     min-height: var(--main-component-height);
 
     display: flex;

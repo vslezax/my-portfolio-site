@@ -1,6 +1,6 @@
 .container {
     position: relative;
-    width: calc(1440 * var(--k));
+    width: 100%;
     height: calc(549 * var(--k));
     background: var(--white);
   }
