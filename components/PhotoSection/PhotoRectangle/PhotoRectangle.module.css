@@ -1,0 +1,55 @@
+.container {
+    position: relative;
+    width: calc(685 * var(--k));
+    height: calc(404 * var(--k));
+    background: var(--black);
+    border-radius: calc(39 * var(--k));
+  }
+  
+  .title {
+    position: absolute;
+    left: calc(56 * var(--k));
+    top: calc(109 * var(--k));
+  
+    font-size: calc(32 * var(--k));
+    font-family: var(--font-montserrat);
+    font-weight: 600;
+    line-height: 1;
+    color: var(--white);
+  }
+  
+  .subtitle {
+    position: absolute;
+    left: calc(56 * var(--k));
+    top: calc(216 * var(--k));
+  
+    font-size: calc(15 * var(--k));
+    font-family: var(--font-montserrat);
+    font-weight: 500;
+    line-height: 1;
+    color: var(--white);
+  }
+
+  .number {
+    position: absolute;
+    left: calc(56 * var(--k));
+    top: calc(95 * var(--k));
+  
+    font-size: calc(11 * var(--k));
+    font-family: var(--font-montserrat);
+    font-weight: 500;
+    line-height: 1;
+    color: var(--white);
+  }
+  
+  .button {
+    position: absolute;
+    left: calc(56 * var(--k));
+    top: calc(268 * var(--k));
+  }
+
+  .button a {
+      display: block;
+      text-decoration: none;
+      cursor: pointer;
+  }

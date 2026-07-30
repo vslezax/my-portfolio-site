@@ -1,0 +1,49 @@
+.wrapper {
+  display: inline;
+}
+
+.word {
+  display: inline-block;
+  opacity: 0;
+  transform: translate(-20px, -20px);
+  filter: blur(var(--blur));
+}
+
+/* ENTER */
+.in .word {
+  animation: inAnim var(--duration) ease forwards;
+  animation-delay: var(--delay);
+}
+
+/* EXIT */
+.out .word {
+  animation: outAnim var(--duration) ease forwards;
+}
+
+/* FORWARD */
+@keyframes inAnim {
+  0% {
+    opacity: 0;
+    transform: translate(-20px, -20px);
+    filter: blur(var(--blur));
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+    filter: blur(0);
+  }
+}
+
+/* REVERSE */
+@keyframes outAnim {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+    filter: blur(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(20px, 20px);
+    filter: blur(var(--blur));
+  }
+}

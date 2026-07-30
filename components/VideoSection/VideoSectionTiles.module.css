@@ -1,0 +1,29 @@
+.container {
+    position: relative;
+    width: var(--frame-width);
+    height: var(--rectangles-frame-height);
+}
+
+.ShootingControl {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+
+  .ColorControl {
+    position: absolute;
+    left: var(--small-rectangle-left-padding);
+    top: 0px;
+  }
+
+  .MontageControl {
+    position: absolute;
+    left: 0px;
+    top: var(--rectangle-top-padding);
+  }
+  
+  .SoundDesignControl {
+    position: absolute;
+    left: var(--big-rectangle-left-padding);
+    top: var(--rectangle-top-padding);
+  }

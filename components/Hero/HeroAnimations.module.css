@@ -1,0 +1,70 @@
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 0.7; }
+}
+
+
+.in {
+  animation: enter 1s ease forwards;
+}
+
+.out {
+  animation: exit 0.8s ease forwards;
+}
+
+/* =========================
+   HELLO LETTERS
+========================= */
+
+.letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translate(-20px, -20px);
+  filter: blur(8px);
+}
+
+/* IMPORTANT: ENTER */
+.in.letter {
+  animation: letterIn 1s ease forwards;
+  animation-delay: calc(var(--i) * 0.05s);
+}
+
+/* IMPORTANT: EXIT */
+.out.letter {
+  animation: letterOut 0.6s ease forwards;
+}
+
+/* =========================
+   KEYFRAMES
+========================= */
+
+@keyframes letterIn {
+  0% {
+    opacity: 0;
+    transform: translate(-20px, -20px);
+    filter: blur(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+    filter: blur(0);
+  }
+}
+
+@keyframes letterOut {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+    filter: blur(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-20px, -20px);
+    filter: blur(8px);
+  }
+}

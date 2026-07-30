@@ -1,0 +1,14 @@
+.container {
+    position: relative;
+    width: calc(1440 * var(--k));
+    height: calc(549 * var(--k));
+    background: var(--white);
+  }
+
+.PhotoRectangle {
+    position: absolute;
+    left: calc((377 * var(--k)) - 0.5 * (685 * var(--k)));
+    top: calc(72 * var(--k));
+
+    translate: 50% 0%;
+}

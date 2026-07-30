@@ -1,0 +1,29 @@
+.container {
+    position: relative;
+    width: var(--big-rectangle-width);
+    height: var(--small-rectangle-height);
+    background-color: var(--black);
+    border-radius: var(--rectangle-border-size);
+  }
+  
+  .text {
+    position: absolute;
+    left: var(--rectangle-text-left);
+    top: var(--rectangle-text-top);
+    margin: 0;
+    font-size: var(--rectangle-text-size);
+    line-height: 1.35;
+  }
+  
+  .primary {
+    color: var(--text-primary);
+    font-family: var(--font-montserrat);
+    font-weight: 600;
+  }
+  
+  .secondary {
+    color: var(--text-secondary);
+    font-family: var(--font-montserrat);
+    font-weight: 500;
+  }
+  

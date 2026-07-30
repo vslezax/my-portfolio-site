@@ -1,0 +1,145 @@
+:root{
+    /* 1280px */
+    --title-text-size: 68px;
+    --title-text-min-height: 57px;
+    --description-text-size: 20px;
+    --description-text-min-height: 40px;
+
+    --main-component-width: 100wh;
+    --main-component-height: 1280px;
+    --elements-top-padding: 101px;
+    --frame-width: 1154px;
+    --frame-height: 1270px;
+    
+    --small-rectangle-width: 404px;
+    --small-rectangle-height: 400px;
+    --big-rectangle-width: 727px;
+    --big-rectangle-height: 400px;
+
+    --small-rectangle-left-padding: 426px;
+    --big-rectangle-left-padding: 749px;
+    --rectangle-top-padding: 416px;
+    --rectangle-border-size: 15px;
+    --rectangles-frame-height: 816px;
+
+    --rectangle-text-size: 16px;
+    --rectangle-text-left: 21px;
+    --rectangle-text-top: 334px;
+    --rectangle-text-two-lines-top: 334px;
+
+    --button-scale: 2;
+
+    --gap: 20px;
+    --text-gap: 10px;
+}
+
+@media (min-width: 1024px) and (max-width: 1280px){
+    :root{
+        /* 1024px */
+        --title-text-size: 76px;
+        --title-text-min-height: 65px;
+        --description-text-size: 20px;
+        --description-text-min-height: 69px;
+    
+        --main-component-width: 100wh;
+        --main-component-height: 1051px;
+        --elements-top-padding: 79px;
+        --frame-width: 917px;
+        --frame-height: 1040px;
+        
+        --small-rectangle-width: 322px;
+        --small-rectangle-height: 318px;
+        --big-rectangle-width: 580px;
+        --big-rectangle-height: 318px;
+    
+        --small-rectangle-left-padding: 337px;
+        --big-rectangle-left-padding: 594px;
+        --rectangle-top-padding: 332px;
+        --rectangle-border-size: 12px;
+        --rectangles-frame-height: 650px;
+    
+        --rectangle-text-size: 13px;
+        --rectangle-text-left: 17px;
+        --rectangle-text-top: 266px;
+        --rectangle-text-two-lines-top: 266px;
+
+        --button-scale: 1.7;
+
+        --gap: 20px;
+        --text-gap: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    :root{
+        /* 768px */
+        --title-text-size: 54px;
+        --title-text-min-height: 46px;
+        --description-text-size: 18px;
+        --description-text-min-height: 63px;
+    
+        --main-component-width: 100wh;
+        --main-component-height: 8791px;
+        --elements-top-padding: 83px;
+        --frame-width: 714px;
+        --frame-height: 847px;
+        
+        --small-rectangle-width: 250px;
+        --small-rectangle-height: 247px;
+        --big-rectangle-width: 450px;
+        --big-rectangle-height: 247px;
+    
+        --small-rectangle-left-padding: 261px;
+        --big-rectangle-left-padding: 461px;
+        --rectangle-top-padding: 257px;
+        --rectangle-border-size: 9px;
+        --rectangles-frame-height: 504px;
+    
+        --rectangle-text-size: 10.35px;
+        --rectangle-text-left: 13px;
+        --rectangle-text-top: 206px;
+        --rectangle-text-two-lines-top: 206px;
+
+        --button-scale: 1.5;
+
+        --gap: 10px;
+        --text-gap: 10px;
+    }
+}
+
+@media (max-width: 768px){
+    :root{
+        /* 640px */
+        --title-text-size: 33px;
+        --title-text-min-height: 28px;
+        --description-text-size: 13.57px;
+        --description-text-min-height: 57px;
+    
+        --main-component-width: 100wh;
+        --main-component-height: 807px;
+        --elements-top-padding: 70px;
+        --frame-width: 610px;
+        --frame-height: 797px;
+        
+        --small-rectangle-width: 297px;
+        --small-rectangle-height: 225px;
+        --big-rectangle-width: 297px;
+        --big-rectangle-height: 225px;
+    
+        --small-rectangle-left-padding: 310px;
+        --big-rectangle-left-padding: 310px;
+        --rectangle-top-padding: 240px;
+        --rectangle-border-size: 11px;
+        --rectangles-frame-height: 465px;
+    
+        --rectangle-text-size: 13px;
+        --rectangle-text-left: 15px;
+        --rectangle-text-top: 161px;
+        --rectangle-text-two-lines-top: 172px;
+
+        --button-scale: 1.5;
+
+        --gap: 0px;
+        --text-gap: 10px;
+    }
+}

@@ -1,0 +1,43 @@
+.container {
+    position: relative;
+    width: calc(147 * var(--k));
+    height: calc(27 * var(--k));
+    background: var(--white);
+    border-radius: calc(1000 * var(--k));
+  }
+  
+  .text {
+    position: absolute;
+    left: calc(8.68 * var(--k));
+    top: calc(8.1 * var(--k));
+  
+    font-size: calc(9.26 * var(--k));
+    font-family: var(--font-montserrat);
+    font-weight: 600;
+    line-height: 1;
+    color: var(--black);
+  }
+
+  .circle {
+    position: absolute;
+    left: calc(122.09 * var(--k));
+    top: calc(2.31 * var(--k));
+    border-radius: 100%;
+    background-color: var(--black);
+    border: calc(0.61 * var(--k)) solid gray;
+    
+    width: calc(22.57 * var(--k));
+    height: calc(22.57 * var(--k));
+    z-index: 2;
+  }
+
+  .link {
+    position: absolute;
+    left: calc(131.34 * var(--k));
+    top: calc(11.57 * var(--k));
+    color: var(--white);
+    
+    width: calc(4.05 * var(--k));
+    height: calc(4.05 * var(--k));
+    z-index: 3;
+  }

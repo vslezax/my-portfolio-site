@@ -1,0 +1,72 @@
+.container {
+    position: relative;
+    width: calc(161px * var(--button-scale));
+    height: calc(34px * var(--button-scale));
+    border-radius: calc(1000px * var(--button-scale));
+    border: calc(1.3px * var(--button-scale)) solid transparent;
+    background:
+        linear-gradient(
+            45deg,
+            var(--black) 0%,
+            #3A3A3A 50%,
+            var(--black) 100%
+        ) padding-box,
+        linear-gradient(
+            45deg,
+            #E6E6E6 0%,
+            #808080 50%,
+            #E6E6E6 100%
+        ) border-box;
+  }
+  
+  .text {
+    position: absolute;
+    left: calc(9.1px * var(--button-scale));
+    top: calc(11.19px * var(--button-scale));
+
+    font-size: calc(10px * var(--button-scale));
+    font-family: var(--font-montserrat);
+    font-weight: 600;
+    line-height: 1;
+    color: var(--white);
+  }
+
+  .circle {
+    position: absolute;
+    left: calc(128.76px * var(--button-scale));
+    top: 50%;
+    transform: translate(0%, -50%);
+    border-radius: 100%;
+    background-color: var(--black);
+    border: calc(0.61px * var(--button-scale)) solid gray;
+    
+    width: calc(22.57px * var(--button-scale));
+    height: calc(22.57px * var(--button-scale));
+    z-index: 2;
+
+    border-radius: calc(1000px * var(--button-scale));
+    border: calc(1.3px * var(--button-scale)) solid transparent;
+    background:
+          radial-gradient(
+            50% 50% at 50% 50%,
+            #A29A9A 0%,
+            #363535 100%
+        ) padding-box,
+        linear-gradient(
+            45deg,
+            #303030 0%,
+            #505050 100%
+        ) border-box;
+  }
+
+  .link {
+    position: absolute;
+    left: calc(138px * var(--button-scale));
+    top: 50%;
+    transform: translate(0, -50%);
+    color: var(--white);
+    
+    width: calc(4.33px * var(--button-scale));
+    height: calc(4.33px * var(--button-scale));
+    z-index: 3;
+  }

@@ -1,0 +1,12 @@
+.container{
+    width: var(--frame-width);
+    min-height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Button{
+    align-self: center;
+}
