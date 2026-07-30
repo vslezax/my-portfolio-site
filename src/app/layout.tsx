@@ -4,12 +4,15 @@ import { Analytics } from "@vercel/analytics/next"
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
-    <html lang="ru" className={montserrat.variable}>
-      <body>{children}</body>
+    <html lang="ru">
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
