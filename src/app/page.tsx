@@ -18,7 +18,7 @@ export default function HomePage() {
         <Hero />
       </div>
       
-      {isMobile ? <VideoSectionMobile /> : <VideoSection />}
+      {isMobile ? <VideoSectionMobile animate={true} /> : <VideoSection />}
 
       <PhotoSection />
     </main>
