@@ -1,0 +1,145 @@
+:root{
+    /* 1280px */
+
+    /* PhotoSection Block */
+    --photo-block-height: 748px;
+
+    /* PhotoSection Frame */
+    --photo-frame-width: 1154px;
+    --photo-frame-height: 683px;
+    --photo-border-size: 62.68px;
+
+    /* Textbox */
+    --photo-textbox-width: 393px;
+    --photo-textbox-height: 314px;
+    --photo-textbox-left-padding: 95px;
+
+    /* Text + subtext */
+    --photo-title-text-size: 54px;
+    --photo-description-text-size: 20px;
+    --photo-description-text-top-padding: 180px;
+
+    /* Button */
+    --photo-button-scale: 3;
+    --photo-button-top-padding: 268px;
+
+    /* Photos */
+    --photo-photos-scale: 3;
+    --photo-photos-left-padding: 626px;
+}
+
+@media (min-width: 1024px) and (max-width: 1280px){
+    :root{
+        /* 1024px */
+
+        /* PhotoSection Block */
+        --photo-block-height: 598px;
+
+        /* PhotoSection Frame */
+        --photo-frame-width: 916px;
+        --photo-frame-height: 541px;
+        --photo-border-size: 49px;
+
+        /* Textbox */
+        --photo-textbox-width: 311px;
+        --photo-textbox-height: 248px;
+        --photo-textbox-left-padding: 75px;
+
+        /* Text + subtext */
+        --photo-title-text-size: 42px;
+        --photo-description-text-size: 20px;
+        --photo-description-text-top-padding: 143px;
+
+        /* Button */
+        --photo-button-scale: 3;
+        --photo-button-top-padding: 212px;
+
+        /* Photos */
+        --photo-photos-scale: 3;
+        --photo-photos-left-padding: 626px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    :root{
+        /* 768px */
+
+        /* PhotoSection Block */
+        --photo-block-height: 449px;
+
+        /* PhotoSection Frame */
+        --photo-frame-width: 707px;
+        --photo-frame-height: 418px;
+        --photo-border-size: 31px;
+
+        /* Textbox */
+        --photo-textbox-width: 240px;
+        --photo-textbox-height: 192px;
+        --photo-textbox-left-padding: 58px;
+
+        /* Text + subtext */
+        --photo-title-text-size: 33px;
+        --photo-description-text-size: 15px;
+        --photo-description-text-top-padding: 110px;
+
+        /* Button */
+        --photo-button-scale: 3;
+        --photo-button-top-padding: 164px;
+
+        /* Photos */
+        --photo-photos-scale: 3;
+        --photo-photos-left-padding: 626px;
+    }
+}
+
+@media (max-width: 768px){
+    :root{
+        /* 640px */
+
+        /* PhotoSection Block */
+        --photo-block-height: 374px;
+
+        /* PhotoSection Frame */
+        --photo-frame-width: 609px;
+        --photo-frame-height: 360px;
+        --photo-border-size: 26px;
+
+        /* Textbox */
+        --photo-textbox-width: 207px;
+        --photo-textbox-height: 165px;
+        --photo-textbox-left-padding: 50px;
+
+        /* Text + subtext */
+        --photo-title-text-size: 28px;
+        --photo-description-text-size: 13px;
+        --photo-description-text-top-padding: 95px;
+
+        /* Button */
+        --photo-button-scale: 3;
+        --photo-button-top-padding: 141px;
+
+        /* Photos */
+        --photo-photos-scale: 3;
+        --photo-photos-left-padding: 626px;
+    }
+}
+
+@media (max-width: 640px){
+    :root{
+        /* 320px */
+        --photo-frame-width: 290px;
+        --photo-frame-height: 408px;
+
+        --photo-title-text-size: 24px;
+        --photo-description-text-size: 12px;
+        --description-text-top-padding: 79px;
+
+        --photo-button-scale: 2;
+        --photo-button-top-padding: 141px;
+
+        --photo-text-left-padding: 105px;
+
+        --photo-photos-scale: 2;
+        --photo-photos-left-padding: 626px;
+    }
+}

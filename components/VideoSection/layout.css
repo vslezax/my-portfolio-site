@@ -6,8 +6,8 @@
     --description-text-min-height: 40px;
 
     --main-component-width: 100%;
-    --main-component-height: 1280px;
-    --elements-top-padding: 101px;
+    --main-component-height: 1480px;
+    --elements-top-padding: 201px;
     --frame-width: 1154px;
     --frame-height: 1270px;
     
@@ -42,8 +42,8 @@
         --description-text-min-height: 69px;
     
         --main-component-width: 100%;
-        --main-component-height: 1051px;
-        --elements-top-padding: 79px;
+        --main-component-height: 1351px;
+        --elements-top-padding: 150px;
         --frame-width: 917px;
         --frame-height: 1040px;
         
@@ -79,8 +79,8 @@
         --description-text-min-height: 63px;
     
         --main-component-width: 100%;
-        --main-component-height: 8791px;
-        --elements-top-padding: 83px;
+        --main-component-height: 1079px;
+        --elements-top-padding: 130px;
         --frame-width: 714px;
         --frame-height: 847px;
         
@@ -107,7 +107,7 @@
     }
 }
 
-@media (max-width: 768px){
+@media (min-width: 640px) and (max-width: 768px){
     :root{
         /* 640px */
         --title-text-size: 33px;
@@ -147,36 +147,19 @@
 @media (max-width: 640px){
     :root{
         /* 320px */
-        --title-text-size: calc(16px * 100vw / 320px);
-        --title-text-min-height: calc(14px * 100vw / 320px);
-        --description-text-size: calc(7px * 100vw / 320px);
-        --description-text-min-height: calc(27px * 100vw / 320px);
-    
-        --main-component-width: 100%;
-        --main-component-height: calc(403px * 100vw / 320px);
-        --elements-top-padding: calc(40px * 100vw / 320px);
-        --frame-width: calc(305px * 100vw / 320px);
-        --frame-height: calc(403px * 100vw / 320px);
-        
-        --small-rectangle-width: calc(148px * 100vw / 320px);
-        --small-rectangle-height: calc(112px * 100vw / 320px);
-        --big-rectangle-width: calc(148px * 100vw / 320px);
-        --big-rectangle-height: calc(112px * 100vw / 320px);
-    
-        --small-rectangle-left-padding: calc(155px * 100vw / 320px);
-        --big-rectangle-left-padding: calc(155px * 100vw / 320px);
-        --rectangle-top-padding: calc(120px * 100vw / 320px);
-        --rectangle-border-size: calc(6px * 100vw / 320px);
-        --rectangles-frame-height: calc(232px * 100vw / 320px);
-    
-        --rectangle-text-size: calc(6.5px * 100vw / 320px);
-        --rectangle-text-left: calc(7.92px * 100vw / 320px);
-        --rectangle-text-top: calc(78px * 100vw / 320px);
-        --rectangle-text-two-lines-top: calc(86px * 100vw / 320px);
+        --rectangle-width: 83vw;
+        --rectangle-height: 260px;
 
-        --button-scale: calc(.7 * 100vw / 320px);
+        --text-width: 82vw;
+        --title-font-size: 35px;
+        --subtitle-font-size: 14px;
+        --title-bottom-padding-for-letters: 4px;
 
-        --gap: 0px;
-        --text-gap: calc(10px * 100vw / 320px);
+        --title-subtitle-margin: calc(15px - var(--title-bottom-padding-for-letters));
+        --subtitle-rectangles-margin: 30px;
+        --rectangles-margin: 15px;
+
+        --text-rectangle-bottom-margin: 20px;
+        --text-rectangle-side-margin: 20px;
     }
 }

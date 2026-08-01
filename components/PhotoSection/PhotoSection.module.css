@@ -1,14 +1,9 @@
 .container {
     position: relative;
     width: 100%;
-    height: calc(549 * var(--k));
+    height: var(--photo-block-height);
     background: var(--white);
+
+    display: flex;
+    justify-content: center;
   }
-
-.PhotoRectangle {
-    position: absolute;
-    left: calc((377 * var(--k)) - 0.5 * (685 * var(--k)));
-    top: calc(72 * var(--k));
-
-    translate: 50% 0%;
-}

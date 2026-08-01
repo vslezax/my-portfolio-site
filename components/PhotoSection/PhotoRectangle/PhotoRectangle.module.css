@@ -1,55 +1,48 @@
 .container {
-    position: relative;
-    width: calc(685 * var(--k));
-    height: calc(404 * var(--k));
-    background: var(--black);
-    border-radius: calc(39 * var(--k));
-  }
-  
-  .title {
-    position: absolute;
-    left: calc(56 * var(--k));
-    top: calc(109 * var(--k));
-  
-    font-size: calc(32 * var(--k));
-    font-family: var(--font-montserrat);
-    font-weight: 600;
-    line-height: 1;
-    color: var(--white);
-  }
-  
-  .subtitle {
-    position: absolute;
-    left: calc(56 * var(--k));
-    top: calc(216 * var(--k));
-  
-    font-size: calc(15 * var(--k));
-    font-family: var(--font-montserrat);
-    font-weight: 500;
-    line-height: 1;
-    color: var(--white);
-  }
+  position: relative;
+  width: var(--photo-frame-width);
+  height: var(--photo-frame-height);
+  background: var(--black);
+  border-radius: var(--photo-border-size);
+}
 
-  .number {
-    position: absolute;
-    left: calc(56 * var(--k));
-    top: calc(95 * var(--k));
-  
-    font-size: calc(11 * var(--k));
-    font-family: var(--font-montserrat);
-    font-weight: 500;
-    line-height: 1;
-    color: var(--white);
-  }
-  
-  .button {
-    position: absolute;
-    left: calc(56 * var(--k));
-    top: calc(268 * var(--k));
-  }
+.textbox {
+  width: var(--photo-textbox-width);
+  height: var(--photo-textbox-width);
+  position: absolute;
+  top: 50%;
+  left: var(--photo-textbox-left-padding);
+  translate: 0 -50%;
+}
 
-  .button a {
-      display: block;
-      text-decoration: none;
-      cursor: pointer;
-  }
+.title {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+
+  font-size: var(--photo-title-text-size);
+  font-family: var(--photo-font-montserrat);
+  font-weight: 600;
+  line-height: 1;
+  color: var(--white);
+}
+
+.subtitle {
+  position: absolute;
+  left: 0px;
+  top: var(--photo-description-text-top-padding);
+
+  font-size: var(--photo-description-text-size);
+
+  font-family: var(--photo-font-montserrat);
+  font-weight: 500;
+  line-height: 1;
+  color: var(--white);
+  white-space: nowrap;
+}
+
+.button {
+  position: absolute;
+  left: 0px;
+  top: var(--photo-button-top-padding);
+}
