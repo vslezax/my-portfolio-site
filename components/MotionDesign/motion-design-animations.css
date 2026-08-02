@@ -1,0 +1,203 @@
+/* --------------------------------------------
+   ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ (значения по умолчанию)
+--------------------------------------------- */
+:root {
+    /* BACKGROUND */
+    --bg-opacity-duration: 2s;
+    --bg-opacity-delay: 0s;
+    --bg-opacity-easing: cubic-bezier(.29,.01,.41,.99);
+    --bg-translate-duration: 2s;
+    --bg-translate-delay: 0s;
+    --bg-translate-easing: cubic-bezier(0,.76,.43,.99);
+    
+    /* FOREGROUND */
+    --fg-opacity-duration: 2s;
+    --fg-opacity-delay: 0s;
+    --fg-opacity-easing: var(--bg-opacity-easing);
+    --fg-translate-duration: 2s;
+    --fg-translate-delay: 0s;
+    --fg-translate-easing: var(--bg-translate-easing);
+    
+    /* LAPTOP */
+    --laptop-opacity-duration: 2.1s;
+    --laptop-opacity-delay: 0s;
+    --laptop-opacity-easing: cubic-bezier(.34,.15,.33,.99);
+    --laptop-translate-duration: 2.1s;
+    --laptop-translate-delay: 0s;
+    --laptop-translate-easing: cubic-bezier(.11,.55,.35,1);
+    
+    /* GLOW */
+    --glow-opacity-duration: 2s;
+    --glow-opacity-delay: 0s;
+    --glow-opacity-easing: cubic-bezier(.34,.01,.35,1);
+    --glow-translate-duration: 1.5s;
+    --glow-translate-delay: 0.5s;
+    --glow-translate-easing: ease-out;
+    
+    /* MOTION */
+    --motion-opacity-duration: 2s;
+    --motion-opacity-delay: 0s;
+    --motion-opacity-easing: cubic-bezier(.48,0,.66,1);
+    --motion-translate-duration: 2s;
+    --motion-translate-delay: 0s;
+    --motion-translate-easing: cubic-bezier(0,.5,.26,1);
+    
+    /* DESIGN */
+    --design-opacity-duration: 2s;
+    --design-opacity-delay: 0.3s;
+    --design-opacity-easing: var(--motion-opacity-easing);
+    --design-translate-duration: 2s;
+    --design-translate-delay: 0.3s;
+    --design-translate-easing: var(--motion-translate-easing);
+}
+
+/* --------------------------------------------
+   АНИМАЦИИ OPACITY
+--------------------------------------------- */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* --------------------------------------------
+   АНИМАЦИИ TRANSLATE
+--------------------------------------------- */
+@keyframes slideFromTop {
+    0% { transform: translateY(var(--translate-amplitude-top)) }
+    100% { transform: translateY(0); }
+}
+
+@keyframes slideFromBottomNoCenter {
+    0% { transform: translateY(var(--translate-amplitude-bottom)); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes slideFromBottom {
+    0% { transform: translateX(-50%) translateY(var(--translate-amplitude-bottom)); }
+    100% { transform: translateX(-50%) translateY(0); }
+}
+
+/* --------------------------------------------
+   НАСТРОЙКИ ДЛЯ КАЖДОГО ЭЛЕМЕНТА
+--------------------------------------------- */
+/* === BACKGROUND === */
+.background {
+    animation-name: 
+        fadeIn,
+        slideFromTop;
+    
+    animation-duration: 
+        var(--bg-opacity-duration),
+        var(--bg-translate-duration);
+    
+    animation-delay: 
+        var(--bg-opacity-delay),
+        var(--bg-translate-delay);
+    
+    animation-timing-function: 
+        var(--bg-opacity-easing),
+        var(--bg-translate-easing);
+    
+    animation-fill-mode: forwards, forwards;
+}
+
+/* === FOREGROUND === */
+.foreground {
+    animation-name: 
+        fadeIn,
+        slideFromTop;
+    
+    animation-duration: 
+        var(--fg-opacity-duration, 1s),
+        var(--fg-translate-duration, 1s);
+    
+    animation-delay: 
+        var(--fg-opacity-delay, 0s),
+        var(--fg-translate-delay, 0s);
+    
+    animation-timing-function: 
+        var(--fg-opacity-easing, ease-out),
+        var(--fg-translate-easing, ease-out);
+    
+    animation-fill-mode: forwards, forwards;
+}
+
+/* === LAPTOP === */
+.laptop {
+    animation-name: 
+        fadeIn,
+        slideFromTop;
+    
+    animation-duration: 
+        var(--laptop-opacity-duration, 1s),
+        var(--laptop-translate-duration, 1s);
+    
+    animation-delay: 
+        var(--laptop-opacity-delay, 0s),
+        var(--laptop-translate-delay, 0s);
+    
+    animation-timing-function: 
+        var(--laptop-opacity-easing, ease-out),
+        var(--laptop-translate-easing, ease-out);
+    
+    animation-fill-mode: forwards, forwards;
+}
+
+/* === GLOW === */
+.glow {
+    animation-name:
+        fadeIn;
+        
+    animation-duration:
+        var(--glow-opacity-duration, 1.5s);
+
+    animation-delay:
+        var(--glow-opacity-delay, 0.5s);
+
+    animation-timing-function:
+        var(--glow-opacity-easing, ease-out);
+
+    animation-fill-mode: forwards;
+}
+
+/* === MOTION === */
+.motion {
+    animation-name:
+        fadeIn,
+        slideFromBottom;
+    
+    animation-duration:
+        var(--motion-opacity-duration, 1s),
+        var(--motion-translate-duration, 1s);
+    animation-delay:
+        var(--motion-opacity-delay, 2s),
+        var(--motion-translate-delay, 2s);
+
+    animation-timing-function:
+        var(--motion-opacity-easing, ease-out),
+        var(--motion-translate-easing, ease-out);
+
+    animation-fill-mode: forwards, forwards;
+}
+
+/* === DESIGN === */
+.design {
+    animation-name:
+        fadeIn,
+        slideFromBottom;
+
+    animation-duration:
+        var(--design-opacity-duration, 1.5s),
+        var(--design-translate-duration, 1.5s);
+
+    animation-delay:
+        var(--design-opacity-delay, 2.25s),
+        var(--design-translate-delay, 2.25s);
+
+    animation-timing-function:
+        var(--design-opacity-easing, ease-out),
+        var(--design-translate-easing, ease-out);
+
+    animation-fill-mode: forwards, forwards;
+}
+

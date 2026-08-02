@@ -1,0 +1,104 @@
+@import './motion-design-animations.css';
+
+.motion,
+.design,
+.glow,
+.background,
+.laptop,
+.foreground {
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: var(--motion-container-height);
+    background: #000000;
+}
+
+.motion{
+    position: absolute;
+    top: var(--motion-text-motion-top);
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: var(--motion-text-motion-width);
+    height: var(--motion-text-motion-height);
+
+    background-image: url('./images/Motion text.webp');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.design{
+    position: absolute;
+    top: var(--motion-text-design-top);
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: var(--motion-text-design-width);
+    height: var(--motion-text-design-height);
+
+    background-image: url('./images/Design text.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.glow{
+    position: absolute;
+    top: var(--motion-renders-top);
+    left: 0px;
+
+    width: var(--motion-renders-width);
+    height: var(--motion-renders-height);
+
+    background-image: url('./images/Glow.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.background{
+    position: absolute;
+    top: var(--motion-renders-top);
+    left: 0px;
+
+    width: var(--motion-renders-width);
+    height: var(--motion-renders-height);
+
+    background-image: url('./images/Render Background.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.laptop{
+    position: absolute;
+    top: var(--motion-renders-top);
+    left: 0px;
+
+    width: var(--motion-renders-width);
+    height: var(--motion-renders-height);
+
+    background-image: url('./images/Render Laptop.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.foreground{
+    position: absolute;
+    top: var(--motion-renders-top);
+    left: 0px;
+    
+    width: var(--motion-renders-width);
+    height: var(--motion-renders-height);
+
+    background-image: url('./images/Render Foreground.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

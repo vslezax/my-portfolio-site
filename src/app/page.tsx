@@ -5,6 +5,8 @@ import VideoSection from "../../components/VideoSection/VideoSection";
 import VideoSectionMobile from "../../components/VideoSection/VideoSectionMobile";
 import Hero from "../../components/Hero/Hero";
 import PhotoSection from "../../components/PhotoSection/PhotoSection";
+import PhotoSectionMobile from "../../components/PhotoSection/PhotoSectionMobile";
+import MotionDesign from "../../components/MotionDesign/MotionDesign";
 import { useMediaQuery } from 'react-responsive';
 import dynamic from 'next/dynamic';
 
@@ -19,8 +21,9 @@ export default function HomePage() {
       </div>
       
       {isMobile ? <VideoSectionMobile animate={true} /> : <VideoSection />}
+      {isMobile ? <PhotoSectionMobile /> : <PhotoSection />}.
 
-      <PhotoSection />
+      <MotionDesign />
     </main>
   );
 }

@@ -1,9 +1,54 @@
 .container {
     position: relative;
     width: 100%;
-    height: var(--photo-block-height);
+    height: auto;
     background: var(--white);
 
     display: flex;
     justify-content: center;
+
+    margin: 50px 0px;
   }
+
+.frame{
+  width: var(--photo-frame-width);
+  height: var(--photo-frame-height);
+  background: var(--black);
+  border-radius: var(--photo-frame-border-radius);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 50px 0;
+}
+
+.video{
+  width: var(--photo-text-width);
+  height: 150px;
+  color: var(--white);
+}
+
+.title{
+  width: var(--photo-text-width);
+  box-sizing: border-box;
+
+  font-size: var(--photo-title-text-size);
+  line-height: 1;
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+  color: var(--white);
+
+  margin-bottom: var(--photo-title-subtitle-margin);
+}
+
+.description{
+  width: var(--photo-text-width);
+  box-sizing: border-box;
+
+  font-size: var(--photo-description-text-size);
+  line-height: 1.2;
+  font-family: var(--font-montserrat);
+  font-weight: 500;
+  color: var(--text-secondary);
+}

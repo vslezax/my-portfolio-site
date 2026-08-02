@@ -127,12 +127,14 @@
 @media (max-width: 640px){
     :root{
         /* 320px */
-        --photo-frame-width: 290px;
+        --photo-frame-width: 83vw;
         --photo-frame-height: 408px;
+        --photo-frame-border-radius: 26px;
 
         --photo-title-text-size: 24px;
         --photo-description-text-size: 12px;
-        --description-text-top-padding: 79px;
+        --photo-description-text-top-padding: 79px;
+        --photo-text-width: 70vw;
 
         --photo-button-scale: 2;
         --photo-button-top-padding: 141px;

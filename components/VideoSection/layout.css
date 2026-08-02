@@ -161,5 +161,7 @@
 
         --text-rectangle-bottom-margin: 20px;
         --text-rectangle-side-margin: 20px;
+
+        --photo-title-subtitle-margin: 15px;
     }
 }

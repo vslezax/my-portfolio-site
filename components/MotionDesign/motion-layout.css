@@ -1,0 +1,127 @@
+:root{
+    /* 1280px */
+    --motion-container-height: calc(720px * (100vw / 1280px));
+
+    --motion-text-motion-top: calc(39px * (100vw / 1280px));
+    --motion-text-motion-width: calc(557px * (100vw / 1280px));
+    --motion-text-motion-height: calc(154px * (100vw / 1280px));
+
+    --motion-text-design-top: calc(146px * (100vw / 1280px));
+    --motion-text-design-width: calc(594px * (100vw / 1280px));
+    --motion-text-design-height: calc(170px * (100vw / 1280px));
+
+    --motion-glow-top: calc(27px * (100vw / 1280px));
+    --motion-glow-width: calc(1706px * (100vw / 1280px));
+    --motion-glow-height: calc(512px * (100vw / 1280px));
+
+    --motion-renders-top: calc(-76px * (100vw / 1280px));
+    --motion-renders-width: 100%;
+    --motion-renders-height: calc(720px * (100vw / 1280px));
+
+    --translate-amplitude-top: -150px;
+    --translate-amplitude-bottom: calc(-1 * var(--translate-amplitude-top));
+}
+
+@media (min-width: 1024px) and (max-width: 1280px){
+    :root{
+        /* 1024px */
+        --motion-container-height: 680px;
+
+        --motion-text-motion-top: 39px;
+        --motion-text-motion-width: 557px;
+        --motion-text-motion-height: 154px;
+
+        --motion-text-design-top: 146px;
+        --motion-text-design-width: 594px;
+        --motion-text-design-height: 157px;
+
+        --motion-glow-top: 27px;
+        --motion-glow-width: 1706px;
+        --motion-glow-height: 512px;
+
+        --motion-renders-top: -76px;
+        --motion-renders-width: 100%;
+        --motion-renders-height: 720px;
+
+        --translate-amplitude-top: -150px;
+        --translate-amplitude-bottom: calc(-1 * var(--translate-amplitude-top));
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    :root{
+        /* 768px */
+        --motion-container-height: 561px;
+
+        --motion-text-motion-top: 53px;
+        --motion-text-motion-width: 445px;
+        --motion-text-motion-height: 124px;
+
+        --motion-text-design-top: 136px;
+        --motion-text-design-width: 481px;
+        --motion-text-design-height: 131px;
+
+        --motion-glow-top: 43px;
+        --motion-glow-width: 1384px;
+        --motion-glow-height: 416px;
+
+        --motion-renders-top: -35px;
+        --motion-renders-width: 100%;
+        --motion-renders-height: 576px;
+
+        --translate-amplitude-top: -100px;
+        --translate-amplitude-bottom: calc(-1 * var(--translate-amplitude-top));
+    }
+}
+
+@media (min-width: 640px) and (max-width: 768px){
+    :root{
+        /* 640px */
+        --motion-container-height: 561px;
+
+        --motion-text-motion-top: 53px;
+        --motion-text-motion-width: 445px;
+        --motion-text-motion-height: 124px;
+
+        --motion-text-design-top: 136px;
+        --motion-text-design-width: 481px;
+        --motion-text-design-height: 131px;
+
+        --motion-glow-top: 43px;
+        --motion-glow-width: 1384px;
+        --motion-glow-height: 416px;
+
+        --motion-renders-top: -35px;
+        --motion-renders-width: 100%;
+        --motion-renders-height: 576px;
+
+        --translate-amplitude-top: -100px;
+        --translate-amplitude-bottom: calc(-1 * var(--translate-amplitude-top));
+    }
+}
+
+@media (min-width: 320px) and (max-width: 640px){
+    :root{
+        /* 320px */
+        --motion-container-height: calc(335px * (100vw / 320px));
+
+        --motion-text-motion-top: calc(20px * (100vw / 320px));
+        --motion-text-motion-width: calc(248px * (100vw / 320px));
+        --motion-text-motion-height: calc(68px * (100vw / 320px));
+
+        --motion-text-design-top: calc(67px * (100vw / 320px));
+        --motion-text-design-width: calc(265px * (100vw / 320px));
+        --motion-text-design-height: calc(71px * (100vw / 320px));
+
+        --motion-glow-top: calc(15px * (100vw / 320px));
+        --motion-glow-width: calc(761px * (100vw / 320px));
+        --motion-glow-height: calc(228px * (100vw / 320px));
+
+        --motion-renders-top: calc(-31px * (100vw / 320px));
+        --motion-renders-width: 100%;
+        --motion-renders-height: calc(321px * (100vw / 320px));
+
+        --translate-amplitude-top: -50px;
+        --translate-amplitude-bottom: calc(-1 * var(--translate-amplitude-top));
+    }
+}
